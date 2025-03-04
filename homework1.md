@@ -41,6 +41,8 @@
 ​	代码编译工具：gcc/g++ （64位）
 ​	重要三方库信息：无
 
+**备注：** 我使用的虚拟机账号为sk, 作为截图证明。
+
 ## 三、实验任务：
 
 	1. 任务一：完成环境配置
@@ -51,7 +53,7 @@
 
 ## 四、实验步骤与实验结果：
 
-	### 实验任务一：
+### 实验任务二：
 
 1. 下载 Vmware，安装 Ubuntu 虚拟机。
 
@@ -137,7 +139,7 @@ make -j8
 1. 使用`qemu`启动内核并开启远程调试。
 
    ```shell
-   qemu-system-i386 -kernel linux-5.10.19/arch/x86/boot/bzImage -s -S -append "console=ttyS0" -nographic
+   qemu-system-i386 -kernel linux-5.10.234/arch/x86/boot/bzImage -s -S -append "console=ttyS0" -nographic
    ```
 
 2. 在另外一个Terminal下启动gdb。
